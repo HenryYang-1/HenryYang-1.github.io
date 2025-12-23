@@ -16,11 +16,12 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-
-I am currently an undergraduate student at the School of Electronic and Information Engineering, Tongji University. I am about to pursue a master's degree in the Research Team for Smart Transport Emerging Computing and Perception (STEP) at the School of Transportation Engineering, Tongji University. My advisor is Professor Chenglong Liu.
+With a solid background in electronics and information engineering from my undergraduate studies at Tongji University, I am now pursuing my Master's degree in the Research Team for Smart Transport Emerging Computing and Perception (STEP) at the School of Transportation Engineering, Tongji University.My advisor is Professor Chenglong Liu.
+My research stands at the intersection of information technology and civil engineering. I am particularly interested in Intelligent Transportation Infrastructure and optimizing Road Maintenance Decisions, aiming to develop data-driven solutions for sustainable transportation systems.
 
 # 📖 Educations
-- *2020.09 - 2024.07 (now)*, [Tongji University](https://www.tongji.edu.cn/), Shanghai.
+- 2020.09 - 2024.07, bachelor’s degree in artificial intelligence [Tongji University](https://www.tongji.edu.cn/), Shanghai.
+- 2024.09 - , M.S. degree [Tongji University](https://www.tongji.edu.cn/), Shanghai.
 
 # 🔍 Projects
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">2022.04 - 2023.04</div><img src='images/EIPA.png' alt="sym" width="100%"></div></div>
@@ -31,13 +32,15 @@ This project is built upon the collaboration between the Shanghai Research Insti
 
 # 📝 Publications 
 📃 Papers
-- Edge Intelligent Perception Agents for Smart City Field Application, Zhongpan Zhu, Hanlin Yang, Qiwei Du, Zhipeng Wang, Dekang Zhu, Viswanath Goud Bellam, Fenggui Chang, Gang Li, **ICCCR 2022**
+- Edge Intelligent Perception Agents for Smart City Field Application, Zhongpan Zhu, Hanlin Yang, Qiwei Du, Zhipeng Wang, Dekang Zhu, Viswanath Goud Bellam, Fenggui Chang, Gang Li. **ICCCR 2022**
+- A Large-Scale Image Repository for Automated Pavement Distress Analysis and Degradation Trend Prediction.Hanlin Yang, Jinpu Cao, Jun Wan, Qian Gao, Chenglong Liu, Martin Fischer, Yuchuan Du, Yishun Li, Pooja Jain, and Difei Wu. **Scientific Data**
 
 📚 Patents
-
+- 🔥`New！`一种基于物流车辆数据的大规模路面性能劣化跟踪方法	ZL202411721196.3
 
 # 🏆 Honors and Awards
 🏅 Honors
+- 🔥`New！`*2025.12* National Scholarship
 - *2023.12* The First Prize Scholarship in Tongji University.
 - *2023.12* Undergraduate Social Activity Scholarship in Tongji University.
 - *2023.12* Excellent Student Cadre in Tongji University.
@@ -55,7 +58,7 @@ This project is built upon the collaboration between the Shanghai Research Insti
 - *2022.07* E-commerce “Innovation, Creativity, and Entrepreneurship” Challenge Provincial First Prize. 
 
 # 💼 Societies
-- *2020.09 - 2021.06*, Youth League Committee Officer in Tongji University.
 - *2020.09 - 2024.06*, Class League Secretary in Tongji University.
 - *2022.09 - 2023.06*, Head of the VEX Laboratory in Tongji University
 - *2022.04 - 2023.04*, First Responsible Person of a Shanghai Municipal College Students' Innovation and Entrepreneurship Project
+- *2020.09 - 2021.06*, Youth League Committee Officer in Tongji University.
