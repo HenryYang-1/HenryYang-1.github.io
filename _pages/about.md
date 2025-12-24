@@ -33,7 +33,7 @@ This project is built upon the collaboration between the Shanghai Research Insti
 # 📝 Publications 
 📃 Papers
 - Edge Intelligent Perception Agents for Smart City Field Application, Zhongpan Zhu, Hanlin Yang, Qiwei Du, Zhipeng Wang, Dekang Zhu, Viswanath Goud Bellam, Fenggui Chang, Gang Li. **ICCCR 2022**
-- A Large-Scale Image Repository for Automated Pavement Distress Analysis and Degradation Trend Prediction.Hanlin Yang, Jinpu Cao, Jun Wan, Qian Gao, Chenglong Liu, Martin Fischer, Yuchuan Du, Yishun Li, Pooja Jain, and Difei Wu. **Scientific Data**
+- A Large-Scale Image Repository for Automated Pavement Distress Analysis and Degradation Trend Prediction.Hanlin Yang, Jinpu Cao, Jun Wan, Qian Gao, Chenglong Liu, Martin Fischer, Yuchuan Du, Yishun Li, Pooja Jain, and Difei Wu. **Scientific Data** [Data available](https://doi.org/10.57760/sciencedb.20383)
 
 📚 Patents
 - 🔥`New！`一种基于物流车辆数据的大规模路面性能劣化跟踪方法	ZL202411721196.3
