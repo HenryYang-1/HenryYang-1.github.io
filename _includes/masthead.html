@@ -1,5 +1,6 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
+    <a class="lang-switch" target="_self" href="{% if page.lang == 'en' %}/{% else %}/en/{% endif %}">{% if page.lang == "en" %}中文{% else %}English{% endif %}</a>
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
@@ -8,9 +9,6 @@
           {% for link in site.data.navigation.main %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{% if page.lang == "en" %}{{ link.title_en }}{% else %}{{ link.title }}{% endif %}</a></li>
           {% endfor %}
-          <li class="masthead__menu-item masthead__menu-item--lang">
-            <a class="lang-switch" target="_self" href="{% if page.lang == 'en' %}/{% else %}/en/{% endif %}">{% if page.lang == "en" %}中文{% else %}English{% endif %}</a>
-          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
