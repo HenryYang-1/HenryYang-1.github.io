@@ -8,11 +8,11 @@
   {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
 {% endif %}
 
-<title>{% if page.lang == "en" %}{{ site.title_en | default: site.title }}{% else %}{{ site.title }}{% endif %} - {% if page.lang == "en" %}Homepage{% else %}个人主页{% endif %}</title>
+<title>{% if page.url contains '/cn/' %}{{ site.title }}{% else %}{{ site.title_en | default: site.title }}{% endif %} - {% if page.url contains '/cn/' %}个人主页{% else %}Homepage{% endif %}</title>
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
-{% if page.lang == "en" %}
-  {% assign seo_description = seo_description | default: site.description_en | default: site.description %}
+{% if page.url contains '/cn/' %}
+  {% assign seo_description = seo_description | default: site.description_cn | default: site.description %}
 {% endif %}
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
@@ -32,9 +32,9 @@
   {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
 {% endif %}
 
-<meta property="og:locale" content="{% if page.lang == 'en' %}en{% else %}zh_CN{% endif %}">
-<meta property="og:site_name" content="{% if page.lang == 'en' %}{{ site.title_en | default: site.title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="og:title" content="{% if page.lang == 'en' %}{{ site.title_en | default: site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:locale" content="{% if page.url contains '/cn/' %}zh_CN{% else %}en{% endif %}">
+<meta property="og:site_name" content="{% if page.url contains '/cn/' %}{{ site.title }}{% else %}{{ site.title_en | default: site.title }}{% endif %}">
+<meta property="og:title" content="{% if page.url contains '/cn/' %}{{ site.title }}{% else %}{{ site.title_en | default: site.title }}{% endif %}">
 
 {% if seo_url %}
   <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">

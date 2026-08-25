@@ -1,4 +1,72 @@
-<script src="assets/js/main.min.js"></script>
+<script src="/assets/js/main.min.js"></script>
 
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}
+
+<a id="lang-switcher" href="/cn/" target="_self" aria-label="Switch language">
+  <i class="fas fa-globe" aria-hidden="true"></i>
+  <span class="lang-label">中文</span>
+  <i class="fas fa-exchange-alt lang-arrow" aria-hidden="true"></i>
+</a>
+
+<style>
+  #lang-switcher {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 1rem;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 999px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #00369f;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #lang-switcher:hover {
+    box-shadow: 0 4px 16px rgba(0, 54, 159, 0.18);
+    border-color: #00369f;
+  }
+
+  #lang-switcher .fa-globe {
+    font-size: 1rem;
+  }
+
+  #lang-switcher .lang-arrow {
+    font-size: 0.75rem;
+    opacity: 0.7;
+  }
+
+  @media (max-width: 768px) {
+    #lang-switcher {
+      top: 0.75rem;
+      right: 0.75rem;
+      padding: 0.35rem 0.8rem;
+      font-size: 0.85rem;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var btn = document.getElementById('lang-switcher');
+    if (!btn) return;
+    var path = window.location.pathname;
+    var isCn = path === '/cn/' || path === '/cn' || path.indexOf('/cn/') === 0;
+    var label = btn.querySelector('.lang-label');
+    if (isCn) {
+      btn.setAttribute('href', '/');
+      if (label) label.textContent = 'English';
+    } else {
+      btn.setAttribute('href', '/cn/');
+      if (label) label.textContent = '中文';
+    }
+  })();
+</script>

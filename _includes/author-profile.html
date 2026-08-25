@@ -2,18 +2,18 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
-{% if page.lang == "en" %}
-  {% assign display_name = author.name_en | default: author.name %}
-  {% assign display_bio = author.bio_en | default: author.bio %}
-  {% assign display_location = author.location_en | default: author.location %}
-  {% assign display_description = site.description_en | default: site.description %}
-  {% assign label_email = "Email" %}
-{% else %}
+{% if page.url contains '/cn/' %}
   {% assign display_name = author.name %}
   {% assign display_bio = author.bio %}
   {% assign display_location = author.location %}
-  {% assign display_description = site.description %}
+  {% assign display_description = site.description_cn | default: site.description %}
   {% assign label_email = "邮箱" %}
+{% else %}
+  {% assign display_name = author.name_en | default: author.name %}
+  {% assign display_bio = author.bio_en | default: author.bio %}
+  {% assign display_location = author.location_en | default: author.location %}
+  {% assign display_description = site.description %}
+  {% assign label_email = "Email" %}
 {% endif %}
 
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
