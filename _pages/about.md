@@ -1,4 +1,4 @@
-<img width="432" height="14" alt="image" src="https://github.com/user-attachments/assets/7afee70c-bdfd-4a76-bbc3-ab70efab9aff" />---
+---
 permalink: /
 lang: zh
 title: ""
