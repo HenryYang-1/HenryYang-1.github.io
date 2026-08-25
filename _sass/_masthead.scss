@@ -14,6 +14,7 @@
   z-index: 20;
 
   &__inner-wrap {
+    position: relative;
     @include container;
     @include clearfix;
     padding: .5em;
@@ -61,17 +62,32 @@
   }
 }
 
-.masthead__menu-item--lang a.lang-switch {
-  margin-left: 0.5rem;
-  padding: 0.25rem 0.75rem;
+.lang-switch {
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  z-index: 20;
+  transform: translateY(-50%);
+  padding: 0.3em 0.8em;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   font-weight: 700;
+  color: $masthead-link-color;
   transition: $global-transition;
 
   &:hover {
     color: $masthead-link-color-hover;
     border-color: $primary-color;
+  }
+}
+
+.greedy-nav {
+  padding-right: 6em;
+}
+
+@include breakpoint(max-width $medium) {
+  .lang-switch {
+    right: 4em;
   }
 }
 
