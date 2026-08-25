@@ -20,11 +20,13 @@ redirect_from:
 我本科就读于同济大学，主修电子信息工程，打下了扎实的专业基础。目前，我就读于同济大学交通运输工程学院智慧交通新兴计算与感知（STEP）研究团队，攻读硕士学位，导师是刘成龙教授。
 我的研究处于信息技术与土木工程的交叉领域，尤其关注智能交通基础设施与道路养护决策优化，致力于为可持续交通系统开发数据驱动的解决方案。
 
-# 📖 教育经历 {:#educations}
+# 📖 教育经历 
+{:#educations}
 - 2020.09 - 2024.07，[同济大学](https://www.tongji.edu.cn/) 人工智能专业学士，上海。
 - 2024.09 - 至今，[同济大学](https://www.tongji.edu.cn/) 硕士研究生，上海。
 
-# 🔍 项目 {:#projects}
+# 🔍 项目 
+{:#projects}
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
@@ -36,7 +38,8 @@ redirect_from:
 </div>
 </div>
 
-# 📝 论文发表 {:#publications}
+# 📝 论文发表 
+{:#publications}
 📃 论文
 - Edge Intelligent Perception Agents for Smart City Field Application, Zhongpan Zhu, Hanlin Yang, Qiwei Du, Zhipeng Wang, Dekang Zhu, Viswanath Goud Bellam, Fenggui Chang, Gang Li. **ICCCR 2022**
 - A Large-Scale Image Repository for Automated Pavement Distress Analysis and Degradation Trend Prediction.Hanlin Yang, Jinpu Cao, Jun Wan, Qian Gao, Chenglong Liu, Martin Fischer, Yuchuan Du, Yishun Li, Pooja Jain, and Difei Wu. **Scientific Data** [数据获取](https://doi.org/10.57760/sciencedb.20383)
@@ -45,7 +48,8 @@ redirect_from:
 - 🔥`New！`一种基于物流车辆数据的大规模路面性能劣化跟踪方法	ZL202411721196.3
 - 基于智能路灯的大气污染物溯源排查方法、终端及系统 ZL202210208991.7
 
-# 🏆 荣誉与奖励 {:#honors-and-awards}
+# 🏆 荣誉与奖励 
+{:#honors-and-awards}
 🏅 荣誉
 - 🔥`New！`*2025.12* 国家奖学金
 - *2023.12* 同济大学一等奖学金
@@ -64,7 +68,8 @@ redirect_from:
 - *2022.08* 中美青年创客大赛 省一等奖
 - *2022.07* 电子商务“创新、创意及创业”挑战赛 省一等奖
 
-# 💼 学生工作 {:#societies}
+# 💼 学生工作 
+{:#societies}
 - *2020.09 - 2024.06*，同济大学 班级团支书
 - *2022.09 - 2023.06*，同济大学 VEX 实验室负责人
 - *2022.04 - 2023.04*，上海市大学生创新创业项目第一负责人
