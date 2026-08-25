@@ -35,6 +35,7 @@ This project is built upon the collaboration between the Shanghai Research Insti
 
 📚 Patents
 - 🔥`New！`一种基于物流车辆数据的大规模路面性能劣化跟踪方法	ZL202411721196.3
+- 基于智能路灯的大气污染物溯源排查方法、终端及系统 ZL202210208991.7
 
 # 🏆 Honors and Awards {:#honors-and-awards}
 🏅 Honors
