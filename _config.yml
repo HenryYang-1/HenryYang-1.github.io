@@ -6,8 +6,10 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Hanlin Yang"
-description              : "A student of Tongji University"
+title                    : "杨翰林"
+title_en                 : "Hanlin Yang"
+description              : "同济大学硕士研究生"
+description_en           : "A Master's student at Tongji University"
 repository               : "Henrydad/Henrydad.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -21,10 +23,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Hanlin Yang"
+  name             : "杨翰林"
+  name_en          : "Hanlin Yang"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Tongji University"
-  location         : "Shanghai, China"
+  bio              : "同济大学"
+  bio_en           : "Tongji University"
+  location         : "中国上海"
+  location_en      : "Shanghai, China"
   employer         :
   pubmed           : 
   googlescholar    :  # "https://scholar.google.com/citations?user=r-R14vYAAAAJ"
