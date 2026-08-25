@@ -2,39 +2,50 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
-{% if page.url contains '/cn/' %}
-  {% assign display_name = author.name %}
-  {% assign display_bio = author.bio %}
-  {% assign display_location = author.location %}
-  {% assign display_description = site.description_cn | default: site.description %}
-  {% assign label_email = "邮箱" %}
-{% else %}
-  {% assign display_name = author.name_en | default: author.name %}
-  {% assign display_bio = author.bio_en | default: author.bio %}
-  {% assign display_location = author.location_en | default: author.location %}
-  {% assign display_description = site.description %}
-  {% assign label_email = "Email" %}
-{% endif %}
-
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
 
   <div class="author__avatar">
-    <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}">
+    <img src="{{ author.avatar }}{% if author.avatar_version %}?v={{ author.avatar_version }}{% endif %}" class="author__avatar" alt="{{ author.name }}">
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ display_name }}</h3>
-    {% if display_bio %}<p class="author__bio">{{ display_bio }}</p>{% endif %}
+    {% if page.url contains '/cn/' %}
+      <h3 class="author__name">{{ author.name }}</h3>
+    {% else %}
+      <h3 class="author__name">{{ author.name_en | default: author.name }}</h3>
+    {% endif %}
+    {% if author.bio %}<p class="author__bio" style ="font-size: 13px;">{{ author.bio }}</p>{% endif %}
   </div>
 
-  <div class="author__urls-wrapper">
+  <div style="margin-top: 12px;" class="author__urls-wrapper">
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
-      {% if site.description %}
-        <li><div style="white-space: normal; margin-bottom: 1em;">{{ display_description }}</div></li>
+      {% if page.url contains '/cn/' %}
+        {% if site.description_cn %}
+          <li><div style="white-space: normal; margin-bottom: 0;">{{ site.description_cn }}</div></li>
+        {% endif %}
+        {% if site.description1_cn %}
+          <li><div style="white-space: normal; margin-bottom: 0;">{{ site.description1_cn }}</div></li>
+        {% endif %}
+        {% if site.description5_cn %}
+          <li><div style="white-space: normal; margin-bottom: 0;">{% if site.step_url %}<a href="{{ site.step_url }}" target="_blank">{{ site.description5_cn }}</a>{% else %}{{ site.description5_cn }}{% endif %}</div></li>
+        {% endif %}
+      {% else %}
+        {% if site.description %}
+          <li><div style="white-space: normal; margin-bottom: 0;">{{ site.description }}</div></li>
+        {% endif %}
+        {% if site.description1 %}
+          <li><div style="white-space: normal; margin-bottom: 0;">{{ site.description1 }}</div></li>
+        {% endif %}
+        {% if site.description5 %}
+          <li><div style="white-space: normal; margin-bottom: 0;">{% if site.step_url %}<a href="{{ site.step_url }}" target="_blank">{{ site.description5 }}</a>{% else %}{{ site.description5 }}{% endif %}</div></li>
+        {% endif %}
+      {% endif %}
+      {% if author.interest %}
+        <li><div style="white-space: normal; margin-bottom: 0;">{% if page.url contains '/cn/' %}{{ author.interest_label_cn | default: "研究方向" }}：{{ author.interest }}{% else %}{{ author.interest_label_en | default: "Research Interests" }}: {{ author.interest_en }}{% endif %}</div></li>
       {% endif %}
       {% if author.location %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ display_location }}</li>
+        <div style='display: flex; margin-top: 8px;'><i class="fa fa-fw fa-map-marker" aria-hidden="true" style="margin-top: 4px;"></i><div style='width: 16px; flex-shrink:0;'></div>{% if page.url contains '/cn/' %}{{ author.location }}{% else %}{{ author.location_en | default: author.location }}{% endif %}</div>
       {% endif %}
       {% if author.employer %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
@@ -42,8 +53,11 @@
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a></li>
       {% endif %}
+      {% if author.phone %}
+        <div style='display: flex; margin-top: 8px;'><i class="fa fa-fw fa-phone" aria-hidden="true" style="margin-top: 4px;"></i><div style='width: 16px; flex-shrink:0;'></div>{{ author.phone }}</div>
+      {% endif %}
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> {{ label_email }}</a></li>
+        <div style='display: flex; margin-top: 8px;'><i class="fa fa-fw fa-envelope" aria-hidden="true" style="margin-top: 4px;"></i><div style='width: 16px; flex-shrink:0;'></div>{{ author.email }}</div>
       {% endif %}
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
