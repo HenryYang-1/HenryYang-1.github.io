@@ -8,8 +8,13 @@
 # Site Settings
 title                    : "杨瀚霖"
 title_en                 : "Hanlin Yang"
-description              : "A Master's student"
-description_cn           : "硕士研究生"
+description              : "Tongji University"
+description_cn           : "同济大学"
+description1             : "M.S. Student"
+description1_cn          : "硕士研究生"
+description5             : "STEP Research Group"
+description5_cn          : "STEP课题组"
+step_url                 : "https://steps.tongji.edu.cn/"
 repository               : "Henrydad/Henrydad.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -26,13 +31,21 @@ author:
   name             : "杨瀚霖"
   name_en          : "Hanlin Yang"
   avatar           : "/images/android-chrome-512x512.png"
-  bio              : "同济大学"
-  bio_en           : "Tongji University"
+  avatar_version   : "1"
+  bio              : 
+  bio1             : 
+  bio2             : 
+  bio3             : 
   location         : "中国上海"
   location_en      : "Shanghai, China"
+  interest         : "智能交通基础设施、道路养护决策优化"
+  interest_en      : "Intelligent Transportation Infrastructure, Road Maintenance Optimization"
+  interest_label_cn: "研究方向"
+  interest_label_en: "Research Interests"
   employer         :
   pubmed           : 
   googlescholar    :  # "https://scholar.google.com/citations?user=r-R14vYAAAAJ"
+  phone            : 
   email            : "yanghenry2001@163.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
