@@ -61,4 +61,18 @@
   }
 }
 
+.masthead__menu-item--lang a.lang-switch {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  font-weight: 700;
+  transition: $global-transition;
+
+  &:hover {
+    color: $masthead-link-color-hover;
+    border-color: $primary-color;
+  }
+}
+
 
